@@ -125,7 +125,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }else{
             getRandomCard(colorArr: ["r", "g", "y", "b"])
             if lastCard.number != -1 {
-                lastCard = Card(.red, number: 5, isreverse: false)
+//                lastCard = Card(.red, number: 5, isreverse: false)
                 playerLabel.text = "RANDOM CARD is \(lastCard.color.rawValue) \(lastCard.number)"
                 while notPlayed.count < players && !solution{
                     getWinner()
